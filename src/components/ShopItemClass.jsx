@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function  ShopItemFunc({item}) {
+function  ShopItemClass({item}) {
   const price = Math.round((item.price*100)/100).toFixed(2);
 
   return (
@@ -26,7 +26,7 @@ function  ShopItemFunc({item}) {
 //   item: PropTypes.object
 // }
 
-ShopItemFunc.propTypes = {
+ShopItemClass.propTypes = {
   item: PropTypes.shape({
     brand: PropTypes.string,
     title: PropTypes.string,
@@ -37,4 +37,4 @@ ShopItemFunc.propTypes = {
   })
 }
 
-export default ShopItemFunc;
+export default ShopItemClass;
